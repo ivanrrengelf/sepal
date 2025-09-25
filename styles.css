@@ -167,3 +167,31 @@ a { color: inherit; text-decoration: none; }
   .primary-nav ul { flex-direction: column; gap: 0; }
   .primary-nav a { padding: 14px 20px; border-top: 1px solid rgba(255,255,255,.1); }
 }
+
+/* Accesibilidad: enlace para saltar contenido */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  left: 16px;
+  top: 16px;
+  width: auto;
+  height: auto;
+  background: var(--amarillo);
+  color: #111;
+  padding: 10px 14px;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+  z-index: 2000;
+}
+
+/* Mejoras tipográficas y espaciado */
+.section { scroll-margin-top: 80px; }
+.section:not(.hero) p { max-width: 70ch; }
+.primary-nav a:focus-visible { outline: 3px solid rgba(255,229,54,.9); outline-offset: 2px; }
+
