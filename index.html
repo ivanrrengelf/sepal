@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SEPAL International</title>
+  <meta name="description" content="Landing page de SEPAL International: Inicio, Quiénes Somos, Misión, Visión y Contacto." />
+  <link rel="preload" as="image" href="https://cepalinternational.com/public/img/logo.png" />
+  <link rel="icon" href="https://cepalinternational.com/public/img/logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-container">
+      <a class="brand" href="#inicio" aria-label="SEPAL International">
+        <img src="https://cepalinternational.com/public/img/logo.png" alt="Logo SEPAL International" />
+      </a>
+      <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Abrir menú">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#quienes">Quiénes Somos</a></li>
+          <li><a href="#mision">Misión</a></li>
+          <li><a href="#vision">Visión</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero section">
+      <div class="container">
+        <h1>SEPAL International</h1>
+        <p>Impulsamos la transformación educativa con programas de formación, asesoría y proyectos que elevan la calidad del aprendizaje.</p>
+        <p>Trabajamos con instituciones, docentes y comunidades para desarrollar habilidades, metodologías innovadoras y entornos de aprendizaje inclusivos.</p>
+        <a class="btn primary" href="#contacto">Contáctanos</a>
+      </div>
+    </section>
+
+    <section id="quienes" class="section alt">
+      <div class="container">
+        <h2>Quiénes Somos</h2>
+        <p>
+          En SEPAL International somos una organización centrada en el área de educación.
+          Diseñamos e implementamos proyectos que fortalecen capacidades, potencian la calidad
+          docente y promueven la innovación pedagógica con enfoque de equidad e inclusión.
+        </p>
+        <p>
+          Acompañamos a escuelas, universidades y entidades públicas y privadas en el desarrollo de:
+        </p>
+        <ul>
+          <li>Programas de formación y actualización docente.</li>
+          <li>Diseño curricular y evaluación de aprendizajes.</li>
+          <li>Integración de tecnología educativa y metodologías activas.</li>
+          <li>Gestión de proyectos y cooperación internacional en educación.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="mision" class="section">
+      <div class="container">
+        <h2>Misión</h2>
+        <p>
+          Facilitar el acceso a una educación de calidad mediante iniciativas innovadoras,
+          capacitación pertinente y apoyo técnico especializado para instituciones y
+          profesionales de la educación.
+        </p>
+        <p>
+          Promovemos prácticas basadas en evidencia, el desarrollo profesional continuo y la
+          colaboración interinstitucional para generar mejoras sostenibles en los aprendizajes.
+        </p>
+      </div>
+    </section>
+
+    <section id="vision" class="section alt">
+      <div class="container">
+        <h2>Visión</h2>
+        <p>
+          Ser referentes en la articulación de esfuerzos educativos a nivel regional e
+          internacional, impulsando sistemas de aprendizaje inclusivos, pertinentes y
+          sostenibles que potencien el desarrollo humano integral.
+        </p>
+        <p>
+          Aspiramos a una educación que forme ciudadanos críticos, creativos y comprometidos
+          con su entorno, apoyada en la innovación, la ética y la cooperación.
+        </p>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact">
+      <div class="container">
+        <h2>Contacto</h2>
+        <form class="contact-form" name="contacto" onsubmit="return false;">
+          <div class="grid">
+            <label>
+              <span>Nombre</span>
+              <input type="text" name="nombre" placeholder="Tu nombre" required />
+            </label>
+            <label>
+              <span>Correo</span>
+              <input type="email" name="correo" placeholder="tucorreo@ejemplo.com" required />
+            </label>
+          </div>
+          <label>
+            <span>Mensaje</span>
+            <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+          </label>
+          <button class="btn secondary" type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> SEPAL International. Todos los derechos reservados.</p>
+      <a href="#top" class="to-top" aria-label="Volver al inicio">▲</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
